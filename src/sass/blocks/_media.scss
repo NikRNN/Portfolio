@@ -91,9 +91,11 @@
   .container {
     max-width: 720px;
   }
+
   .promo__title {
     font-size: 36px;
     width: 490px;
+    line-height: 60px;
   }
   .about {
     &__wrapper {
@@ -212,7 +214,7 @@
     }
   }
   .skills {
-    padding-top: 46px;
+    padding-top: 40px;
     &__counter {
       margin-top: 48px;
       grid-template-columns: 255px 255px;
@@ -236,16 +238,19 @@
   }
   .portfolio {
     padding-top: 40px;
+    &__wrapper {
+      margin-top: 40px;
+    }
   }
   .prices {
-    padding-top: 68px;
+    padding-top: 40px;
     &__wrapper {
       margin-top: 20px;
       justify-content: center;
     }
   }
   .contacts {
-    padding-top: 46px;
+    padding-top: 40px;
     &__photo {
       display: none;
     }
@@ -335,9 +340,32 @@
       width: 300px;
     }
   }
+  .portfolio {
+    h2 {
+      margin-bottom: 15px;
+    }
+    .divider {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    &__wrapper {
+      margin-top: 40px;
+    }
+  }
   .prices {
     &__wrapper {
+      margin-top: 20px;
       grid-template-columns: repeat(auto-fit, 295px);
+    }
+    .divider {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    h2 {
+      margin-bottom: 21px;
+    }
+    p {
+      margin-bottom: unset;
     }
   }
   .contacts {
@@ -367,6 +395,10 @@
     &__subtitle {
       font-size: 24px;
       line-height: 36px;
+    }
+    .divider {
+      margin-top: 15px;
+      margin-bottom: unset;
     }
   }
 }
